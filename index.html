@@ -1,0 +1,350 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Accueil/Pere-Noel-A</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  <!--
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />-->
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  
+  <div id="container">
+ 
+    <div id="accueil">
+      
+    </div>
+
+    <div id="spectacle">
+
+    </div>
+
+    <div id="achatplace">
+
+    </div>
+
+    <div id="contact">
+
+    </div>
+
+  </div>
+
+  <!--=============================================================-->
+    <!-- SECTION-TITLE -->  
+    <div class="section-title">
+      <h1 class="title-acceuil">Village de laponie<!--TITRE--></h1>
+    </div>
+    
+    <!-- BOUTON LETTRES --> 
+    <div class="section-connect" aria-label="">
+      <a href="#" class="connect"
+        >Ecrire une lettre</a
+      >
+    </div>
+
+    <!-- BOUTON ELF--> 
+    <div class="section-elf" aria-label="">
+      <img src="./images/image1.jpg "class="elf"
+      >
+    </div>
+
+    <!-- BOUTON RENNE--> 
+    <div class="section-renne" aria-label="">
+      <img src="./images/image4.jpg" class="renne"
+      >
+    </div>
+
+  <!---------------------------------------- Compte a rebours--><div class="section-02"><div class="S-02">
+
+  <div class="box-rebours">        
+    <div class="box_jour">
+        <div id="jour">00</div>
+        <span id="jour_label">Jours</span>
+    </div>
+    <div class="box_heure">
+        <div id="heure">00</div>
+        <span id="heure_label">Heures</span>
+    </div>
+    <div class="box_minute">
+        <div id="minute">00</div>
+        <span id="minute_label">Minutes</span>
+    </div>
+    <div class="box_seconde">
+        <div id="seconde">00</div>
+        <span id="seconde_label">Secondes</span>
+    </div>
+</div>
+</div></div>
+    <!--------------------------------------- SECTION TITRE -->
+    <style>
+    .section-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 100%;
+    }
+    .title-acceuil {/*en superposition*/
+      position: absolute;
+      top: 200px; /*280px*/ /* POUR REGLE LA HAUTEUR DU TITRE */
+      z-index: 1;
+      /*height: 50px;*/
+      height: auto;
+      margin-top: 10px;
+      text-decoration: none;
+      font-size: 35px;
+      font-weight: 595;
+      font-family: "Tangerine", Arial, serif; /* Typo pour le Titre, et typo de substitution */
+      text-shadow: 4px 4px 4px green;
+      color: white;
+      opacity: 1;
+    }
+    </style>
+
+    <!---------------------------- BOUTON ECRIRE UNE LETTRE -->
+    <style>
+    .section-connect {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .connect {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      color: red;
+      /*text-shadow: 4px 4px 4px blue;*/
+      font-weight: 600;
+      position: absolute;
+      top: 460px;
+      z-index: 1;
+      margin-top: 0px;
+      padding: 5px;
+      text-decoration: none;
+      height: 25px;/*35px*/
+      width: auto;/*200px*//*160px*/
+      border: 1px solid blue;
+      border-radius: 50px;
+      opacity: 1;
+    }
+
+    .connect:hover {
+      font-size: 1.3em;
+    }
+
+    </style>
+
+    <!---------------------------- BOUTON ECRIRE UNE LETTRE -->
+    <style>
+      .section-elf {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*object-position: 50% 50%;*/
+      }
+      .elf {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        color: red;
+        /*text-shadow: 4px 4px 4px blue;*/
+        font-weight: 600;
+        position: absolute;
+        top: 380px;
+        /*left: 200px;*/
+        z-index: 1;
+        margin-top: 10px;
+        text-decoration: none;
+        height: 80px;
+        width: 50px;
+        /*border: 1px solid blue;*/
+        /*border-radius: 50px;*/
+        opacity: 1;
+         
+      }
+      </style>
+
+    <!---------------------------- BOUTON ECRIRE UNE LETTRE -->
+    <style>
+      .section-renne {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*object-position: 50% 50%;*/
+      }
+      .renne {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        color: red;
+        /*text-shadow: 4px 4px 4px blue;*/
+        font-weight: 600;
+        position: absolute;
+        top: 380px;
+        left: 200px;
+        z-index: 1;
+        margin-top: 10px;
+        text-decoration: none;
+        height: 80px;
+        width: 50px;
+        /*border: 1px solid blue;*/
+        /*border-radius: 50px;*/
+        opacity: 1;
+         
+      }
+      </style>
+
+
+  <!--============================================================-->
+
+  <style>
+    .card-img-top2
+   /*.card-img-top2*/ {/*
+
+      position: relative;
+      top: 50px;
+      z-index: 1;*/
+    display: flex;
+    background-color: #abebc6;
+    height: 80px;
+    width: 50px;
+    /*aspect-ratio: 3/2; /* POUR ADAPTE LA RESOLUTION IMAGE AU ECRAN */
+    border-radius: 15px 15px 0px 0px;
+    border: 1px solid grey;
+    padding: 0px;
+    overflow: hidden;
+  }
+  </style>
+
+
+  <!--/*ANIMATION TRAINEAUX*/-->
+  <div class="favorite-place">
+    <div class="plane"><img src="./images/santa.png" width="200px" height="100px"></img></div>
+  </div>
+
+  <p>
+  en direct<br> du Village du pere Noel
+  ou il neige
+  </p>
+
+  <!--Effet de neige qui tombe !-->
+ <script src="./js/script.js" type="text/javascript"> </script>
+</body>
+</html>
+
+
+<!--/*EFFET NEIGE*/--><!--
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Des zolis flocons :</title>
+
+		<style type="text/css">
+			html, body {
+				padding:0;
+				margin:0;
+				background:#333;
+				position:relative;
+			}
+		</style>
+
+		<script type="text/javascript" src="snow.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				snow.init(50);
+			};
+		</script>
+	</head>
+	<body>
+	</body>
+</html>--><!---->
+
+
+
+
+<!--
+<style>
+
+html,body {
+  overflow-y: none;
+  overflow-x: none;
+  overflow: hidden;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+/* IMAGE DE FONF*/
+#accueil { 
+	width: 100vw;/*100%*/
+	height: 90vh;/*100vh*/
+	background: url(,/fond1.jpg) no-repeat left bottom,
+	url(../images/image-1.png) no-repeat right bottom,
+	url(fond1.jpg) no-repeat center;/*https://www.youtube.com/watch?v=XI2YFCgs81w*/
+	background-size: auto, auto, 100% 100%;
+  vertical-align: top;
+
+  /*
+  background-image: URL(fond1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+  url("../../media/examples/lizard.png");
+  */    
+}
+/*ANIMATION TRAINEAUX*/
+.plane {
+  position: absolute;
+  color: white;
+  animation: 8s ease 1s infinite running wheeeee ;
+  /*animation: 5s ease 0.1s infinite alternate bouncingBall ;*/
+  font-size: 3rem;
+  transform: rotate(0deg);/*45deg*/
+}
+
+@keyframes wheeeee {
+  /*point de depart*/
+  100% {
+    left: 100%;
+    bottom: 8%;/*100%*/
+    /*background: yellow;*/
+    /*background: blue;*/
+  }
+  /*point d'arrive*/
+  0% {
+    left: 0;
+    bottom: 8%;/*0*/
+  }
+}
+</style>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+

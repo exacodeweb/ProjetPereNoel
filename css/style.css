@@ -1,0 +1,335 @@
+/*TEXTE*/ /*
+body {
+  color:#FFF;
+  padding:150px;
+  text-align:center; 
+  background:#000;
+  font-size:21px;
+  font-family:helvetica;
+}*/
+
+/*------------------------------------------------------*/
+
+html,
+body {
+  overflow-y: none;
+  overflow-x: none;
+  overflow: hidden;
+}
+
+.Topbar {
+  width: 90%;
+  height: 70px;
+  background-color: #a93226 !important;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  vertical-align: top !important;
+  /*top: 100px;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+/* IMAGE DE FONT*/
+#accueil {
+  width: 100vw; /*100%*/
+  height: 100vh; /*100vh*/ /*Test a 90vh*/
+  background: url(,../images/fond1.jpg) no-repeat left bottom,
+    url(../images/fond1.png) no-repeat right bottom,
+    /*../images/image-1.png*/ url(../images/fond1.jpg) no-repeat center; /*https://www.youtube.com/watch?v=XI2YFCgs81w*/
+  background-size: auto, auto, 100% 100%;
+  vertical-align: top;
+}
+
+/*EFFET NEIGE*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #333;
+  position: relative;
+}
+
+/*ANIMATION TRAINEAUX*/
+.plane {
+  position: absolute;
+  color: white;
+  /*animation: 6s ease 1s infinite running;*/
+  animation: 8s ease 0.9s infinite running wheeeee; /*8s et 1s*/
+  /*animation: 3s linear 2s infinite running slidein;*/ /*slidein*/ /*TEST*/
+  /*animation: 8s linear 5s infinite running wheeeee;*/ /*TEST*/
+  /*animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0)*/ /*TEST*/
+  /*animation: 3s linear 1s infinite running slidein;*/ /*TEST*/
+  /*animation: 5s ease 5s infinite alternate  bouncing;*/ /*bouncingBall*/ /*TEST*/
+  font-size: 3rem;
+  transform: rotate(0deg); /*45deg*/
+}
+
+@keyframes wheeeee {
+  /*point de depart*/
+  100% {
+    left: 100%; /*-- POUR REGLE LE POINT D'ARRIVE --*/
+    bottom: 88%; /*100%*/ /*8%*/ /*--POUR REGLE L'ANGLE D'INCLINAISON --*/
+    /*background: yellow;*/
+    /*background: blue;*/
+    /*animation-delay: 5s;*/
+  }
+  /*point d'arrive*/
+  0% {
+    left: 35%; /*--POUR REGLE LE POINT DE DEPART --*/
+    bottom: 38%; /*0*/ /*POUR REGLE LA HAUTEUR DU POINT DE DEPART */
+  }
+}
+
+@keyframes slidein {
+  /*point de depart*/
+  100% {
+    left: 100%;
+    bottom: 8%; /*100%*/
+    /*background: yellow;*/
+    /*background: blue;*/
+  }
+  /*point d'arrive*/
+  0% {
+    left: 0;
+    bottom: 8%; /*0*/
+  }
+}
+
+@keyframes bouncing {
+  /*point de depart*/
+  100% {
+    left: 100%;
+    bottom: 8%; /*100%*/
+    /*background: yellow;*/
+    /*background: blue;*/
+  }
+  /*point d'arrive*/
+  0% {
+    left: 0;
+    bottom: 8%; /*0*/
+  }
+}
+
+/* PARAMETRE */ /*
+Accélération : animation-timing-function
+linear : vitesse constante
+ease-in : accélère progressivement
+ease-out : ralentit progressivement
+ease-in-out : accélère puis ralentit
+step-start : reste à l'état final toute la durée
+step-end : reste à l’état initial toute la durée et saute à l'état final
+steps(4, end) : exécute 4 transitions sur la durée
+cubic-bezier(0.1, 0.7, 1.0, 0.1) : courbe de bezier
+*/
+
+/*---------------------------------------- Compte a rebours --*/
+/*
+body {
+  margin: 0;
+}*/
+.box-rebours {
+  height: auto; /*100vh*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  z-index: 1;
+  position: absolute;
+  vertical-align: top !important;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.box_jour,
+.box_heure,
+.box_minute,
+.box_seconde {
+  padding: 5px 5px 0px 5px; /*10px*/
+}
+#jour,
+#heure,
+#minute,
+#seconde {
+  background-color: green; /*black*/
+  padding: 5px 15px; /*10px 20px*/
+  color: white;
+  font-size: 1.2rem; /*3rem*/
+  font-weight: bold;
+  opacity: 1;
+}
+#jour_label,
+#heure_label,
+#minute_label,
+#seconde_label {
+  font-size: 1rem; /*1.5rem*/
+}
+/*====================================================================================================================*/
+/*--------------------------------------- SECTION TITRE --*/
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+.title-acceuil {
+  /*en superposition*/
+  position: absolute;
+  top: 200px; /*280px*/ /* POUR REGLE LA HAUTEUR DU TITRE */
+  z-index: 1;
+  /*height: 50px;*/
+  height: auto;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 595;
+  font-family: "Tangerine", Arial, serif; /* Typo pour le Titre, et typo de substitution */
+  text-shadow: 4px 4px 4px green;
+  color: white;
+  opacity: 1;
+}
+
+/*---------------------------- BOUTON ECRIRE UNE LETTRE --*/
+
+.section-connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: #830a02; /*#a70e04*/
+  /*text-shadow: 4px 4px 4px blue;*/
+  font-weight: 600;
+  position: absolute;
+  top: 460px;
+  z-index: 1;
+  margin-top: 0px;
+  padding: 5px;
+  text-decoration: none;
+  height: 25px; /*35px*/
+  width: auto; /*200px*/ /*160px*/
+  border: 1px solid blue;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+.connect:hover {
+  font-size: 1.3em;
+}
+
+/*---------------------------- BOUTON ECRIRE UNE LETTRE --*/
+
+.section-elf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*object-position: 50% 50%;*/
+}
+.elf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: red;
+  /*text-shadow: 4px 4px 4px blue;*/
+  font-weight: 600;
+  position: absolute;
+  top: 380px;
+  /*left: 200px;*/
+  z-index: 1;
+  margin-top: 10px;
+  text-decoration: none;
+  height: 80px;
+  width: 50px;
+  /*border: 1px solid blue;*/
+  /*border-radius: 50px;*/
+  opacity: 1;
+}
+
+/*---------------------------- BOUTON ECRIRE UNE LETTRE --*/
+.section-renne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*object-position: 50% 50%;*/
+}
+.renne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: red;
+  /*text-shadow: 4px 4px 4px blue;*/
+  font-weight: 600;
+  position: absolute;
+  top: 380px;
+  left: 200px;
+  z-index: 1;
+  margin-top: 10px;
+  text-decoration: none;
+  height: 80px;
+  width: 50px;
+  /*border: 1px solid blue;*/
+  /*border-radius: 50px;*/
+  opacity: 1;
+}
+/*---------------------------- PANNEAUX COMPTE A REBOURS --*/
+.section-02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*object-position: 50% 50%;*/
+}
+.S-02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: red;
+  /*text-shadow: 4px 4px 4px blue;*/
+  font-weight: 600;
+  position: absolute;
+  top: 10px;
+  /*left: 400px; /*200px*/
+  z-index: 1;
+  margin-top: 10px;
+  text-decoration: none;
+  height: 80px;
+  width: 50px;
+  /*border: 1px solid blue;*/
+  /*border-radius: 50px;*/
+  opacity: 1;
+}
+/*--============================================================--*/
+
+.card-img-top2
+/*.card-img-top2*/ {
+  /*
+
+  position: relative;
+  top: 50px;
+  z-index: 1;*/
+  display: flex;
+  background-color: #abebc6;
+  height: 80px;
+  width: 50px;
+  /*aspect-ratio: 3/2; /* POUR ADAPTE LA RESOLUTION IMAGE AU ECRAN */
+  border-radius: 15px 15px 0px 0px;
+  border: 1px solid grey;
+  padding: 0px;
+  overflow: hidden;
+}
